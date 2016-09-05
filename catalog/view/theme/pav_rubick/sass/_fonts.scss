@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Delius+Unicase:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700);
+//FONT Flaticon
+@font-face {
+  font-family: "Flaticon";
+  src: url("#{$image-fonts-path}Flaticon.eot");
+  src: url("#{$image-fonts-path}Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("#{$image-fonts-path}Flaticon.woff") format("woff"),
+       url("#{$image-fonts-path}Flaticon.ttf") format("truetype"),
+       url("#{$image-fonts-path}Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("#{$image-fonts-path}Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-art:before { content: "\f100"; }
+ 
+
+
+@font-face {
+  font-family: "feather";
+  src:url("#{$image-fonts-path}feather-webfont.eot");
+  src:url("#{$image-fonts-path}feather-webfont.eot?#iefix") format("embedded-opentype"),
+    url("#{$image-fonts-path}feather-webfont.woff") format("woff"),
+    url("#{$image-fonts-path}feather-webfont.ttf") format("truetype"),
+    url("#{$image-fonts-path}feather-webfont.svg#feather") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Character Mapping Method */
+ 
+[data-icon]:before {
+  display: inline-block;
+  font-family: "feather";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* CSS Class Mapping Method */
+ 
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  font-family: "feather";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bag:before {
+  content: "\e106";
+}
+.icon-arrow-right:before {
+    content: "\e095";
+}
+.icon-circle-plus:before {
+    content: "\e040";
+}

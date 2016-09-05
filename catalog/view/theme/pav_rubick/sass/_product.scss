@@ -1,0 +1,205 @@
+// Price
+.price {
+    // all page
+    color: $product-price-color;
+    //font-weight: $product-price-new-font-weight;
+    .price-new {
+    }
+    .price-old {
+        color: $product-price-old-color;
+        font-weight: normal;
+        @include rtl-padding-left(5px);
+        text-decoration: line-through;
+    }
+}
+table {
+    .price {
+        margin: 0;
+    }
+}
+// page product detail
+.detail {
+    &.price-new {
+        font-size: 36px;
+        color: $theme-color;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &.price-old {
+        font-size: 18px;
+        color: $theme-color-second ;
+    }
+    &.rating {
+        margin-bottom: 50px;
+        border-top:1px dotted $border-color;
+        border-bottom:1px dotted $border-color;
+        padding:5px 0;
+    }
+}
+// Rating
+.rating {
+    .fa-stack {
+        font-size: 10px;
+        @include size(8px,10px);
+        line-height: 10px;
+        margin: 0;
+    }
+    .fa-star {
+        color: #febd49;
+        height: 12px;
+        line-height: 12px;
+
+    }
+    .fa-star-o {
+        color: #c9c9c9;
+        height: 12px;
+        line-height: 12px;
+    }
+}
+
+// Label
+.product-label {
+    color: $product-label-color;
+    font-size: $product-label-font-size;
+    font-family: $product-label-font-family;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    background: $product-label-new-bg;
+    padding: 0px 12px;
+    @include rtl-right(40px);
+    height: 18px;
+    line-height: 18px;
+    @include border-radius(17px);
+}
+
+.product-v1{
+    .product-label{
+        @include rtl-right(0);
+        top: 0;
+        background: $theme-color;
+    }
+    .products-row{
+        &:first-child{
+            .product-block{
+                border-top: none;
+                padding-top: 0;
+            }
+        }
+    }
+    .product-col{
+        margin-bottom: 0;
+    }
+    .product-block{
+       border-top: 1px dotted $border-color;
+       padding: 30px 0;
+       .name{
+            margin-top: 0;
+       }
+       .action{
+        display: none;
+       }
+       &:hover{
+            background: none !important;
+            @include box-shadow(none !important);
+       }
+        .image{
+            @include rtl-float-left();
+            @include rtl-margin-right(20px);
+        }
+        .product-meta{
+            overflow: hidden;
+            @include rtl-text-align-left();
+        }
+    }    
+}
+.widget-product-list  {
+    .product-block{
+        .name{
+            margin: 0;
+            a{
+                color: #999999;
+            }           
+        }
+        .image {
+            margin-right: 15px;
+        }
+    }
+}
+.product-list-title{
+    .panel-heading{
+        .panel-title{
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 63px;
+            z-index: 10;
+            position: absolute;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #222222;
+            padding: 0 0 4px;
+        }
+    }
+}
+.product-block {
+    text-align: left;
+    .name {
+        font-family: "Rubik",sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 15px 0 4px;
+        min-height: 39px;
+        text-transform: capitalize;
+        a {
+            font-size: 13px;
+            color: #222222;
+        }
+    }
+    .rating{
+        margin-bottom: 10px;
+    }
+    .bottom{
+        display: inline-block;
+        //height: 36px;
+        .cart,.price{
+            display: inline-block;
+            @include rtl-float-left();
+        }
+        .cart{
+            .btn{
+                border:none;
+                color: $brand-success;
+                height: 35px;
+                padding: 0 15px;
+                font-size: 14px;
+                border-right:1px solid #ebebeb;
+                @include border-radius(36px 0 0 36px);
+                -webkit-transition: all 0.35s ease 0s;
+                transition: all 0.35s ease 0s;
+                &:hover{
+                    background-color: $brand-success;
+                    color:$white;
+                    box-shadow: 0 0 0 30px $brand-success inset;
+                }
+            }
+        }
+        .price{
+            //padding: 5px 10px;
+        }
+    }
+    .image {
+        position: relative;
+        text-align: center;
+        z-index: 0;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .description {
+        display: none;
+    }
+    .product-col{
+        margin-bottom:20px;
+    }
+}
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<footer>
+		<title>Footer</title>
+		 <description></description>
+         <module>
+            <title>Logo</title>
+            <field>
+                <name>widget-logo</name>
+                <label>Content</label>
+                <type>textarea</type>
+                <lang>0</lang>
+                <default><![CDATA[
+                    <div class="logo-footer"><img class="" src="image/catalog/logo_theme.png" alt="logo"></div>
+                    <div class="content-html">
+                        They key is to have every key, the key to open every door. How business? Boomin. Bless up. Life is what you make it, so let make it. Another one.
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            <address>
+                                <strong>Store locator</strong><br>              
+                                PO Box 1230, Georgetown,<br>
+                                Grand Cayman, CAYMAN <br>
+                                ISLANDS - UK<br>
+                            </address>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            <address>
+                                <strong>Email</strong><br> 
+                                <a href="mailto:#">contact-email@domain.com</a>
+                                <a href="mailto:#">info-email@domain.com</a>
+                            </address>
+                        </div>
+                    </div>
+                ]]></default>
+            </field>
+         </module>
+
+         <module>
+            <title>Logo Payment</title>
+            <field>
+                <name>widget_paypal</name>
+                <label>Content</label>
+                <type>textarea</type>
+                <lang>1</lang>
+                <default><![CDATA[
+                    <div><img class="img-responsive" src="image/catalog/demo/payment.png" alt=""></div>  
+                    <div><p style="text-align: center;">
+                    RUBICK Inc., 8901 Marmora Road, Glasgow, D04 89GR. Phone - (800) 2345-6789
+                    <br>
+                    Copyright © 2015 RUBICK. All rights reserved.
+                    </p></div>]]>                        
+                </default>
+            </field>
+         </module>
+   
+	</footer>
+    <header>
+        <title>header-topbar</title>
+        <description></description>
+        <module>
+            <title>telephone</title>
+            <field>
+                <name>module_telephone</name>
+                <label>Phone</label>
+                <type>textarea</type>
+                <lang>0</lang>
+                <default><![CDATA[<p><i class="fa fa-phone"></i>0125488899</p>]]></default>
+            </field>
+         </module>
+    </header>
+</theme>

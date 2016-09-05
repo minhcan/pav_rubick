@@ -1,0 +1,34 @@
+//newleter
+.form-newsletter {
+	.email {
+        background: none;
+        border:none;
+	}
+    .input-group{
+        background: #f1f1f1;
+        //border: 1px solid #ebebeb;
+        //@include border-radius(38px);
+        .btn{
+            border: none;
+            //@include border-radius(38px);
+            padding: 10px 30px;
+            //font-size: 14px;
+        }
+    }
+}
+/* .form-control::-moz-placeholder{
+    font-family: "Droid Serif",serif;
+    font-style: italic;
+} */
+.valid {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+    @include rtl-left(0);
+    .alert {
+        width: auto;
+        margin-top: 20px;
+        @include rtl-text-align-left();
+    }
+}
