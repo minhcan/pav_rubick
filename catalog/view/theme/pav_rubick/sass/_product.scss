@@ -61,18 +61,22 @@ table {
 
 // Label
 .product-label {
-    color: $product-label-color;
+    color: $black;
     font-size: $product-label-font-size;
     font-family: $product-label-font-family;
-    font-weight: bold;
+    font-weight: 500;
     position: absolute;
-    top: 40px;
-    background: $product-label-new-bg;
+    top: 15px;
+    text-transform: uppercase;
+    background: transparent;
     padding: 0px 12px;
-    @include rtl-right(40px);
+    @include rtl-right(-10px);
     height: 18px;
     line-height: 18px;
-    @include border-radius(17px);
+    @include border-radius(0);
+    .product-label-special{
+        border-bottom: 2px solid $black;
+    }
 }
 
 .product-v1{

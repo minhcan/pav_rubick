@@ -68,6 +68,24 @@
                 </div>
 
             <?php } ?>
+
+            <?php if ($product['price']) { ?>
+            <ul class="list-unstyled">
+                <?php if ($product['tax']) { ?>
+                    <li><?php echo $text_tax; ?> <?php echo $product['tax']; ?></li>
+                <?php } ?>
+                <?php if ($product['points']) { ?>
+                    <li><?php echo $text_points; ?> <?php echo $product['points']; ?></li>
+                <?php } ?>
+                <?php if ($product['discounts']) { ?>
+                    <li><hr></li>
+                    <?php foreach ($product['discounts'] as $discount) { ?>
+                        <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
+                    <?php } ?>
+                <?php } ?>
+            </ul>
+            <?php } ?>
+
         </div>
         <?php if( isset($product['description']) ){ ?>
             <p class="description"><?php echo utf8_substr( strip_tags($product['description']),0,200);?>...</p>

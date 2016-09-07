@@ -221,7 +221,21 @@ class ControllerProductCategory extends Controller {
 					$rating = false;
 				}
 
+				$points = $result['points'];
+
+				$discounts = $this->model_catalog_product->getProductDiscounts( $result['product_id'] );
+
+				foreach ($discounts as $discount) {
+					$pdata['discounts'][] = array(
+						'quantity' => $discount['quantity'],
+						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency'])
+					);
+				}
+
 				$data['products'][] = array(
+					'points'   => $points,
+					'discounts'   => $discounts,
+
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],

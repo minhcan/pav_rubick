@@ -11778,30 +11778,35 @@ table .price {
 
 /* line 63, ../sass/_product.scss */
 .product-label {
-  color: #fff;
-  font-size: 12px;
-  font-family: "Droid Serif", serif;
-  font-weight: bold;
+  color: #171717;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
   position: absolute;
-  top: 40px;
-  background: #6fa66f;
+  top: 15px;
+  text-transform: uppercase;
+  background: transparent;
   padding: 0px 12px;
-  right: 40px;
+  right: -10px;
   height: 18px;
   line-height: 18px;
-  border-radius: 17px;
-  -webkit-border-radius: 17px;
-  -moz-border-radius: 17px;
-  -ms-border-radius: 17px;
-  -o-border-radius: 17px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 /* line 115, ../sass/mixins/_rtl.scss */
 .rtl .product-label {
-  left: 40px;
+  left: -10px;
   right: auto;
 }
+/* line 77, ../sass/_product.scss */
+.product-label .product-label-special {
+  border-bottom: 2px solid #171717;
+}
 
-/* line 79, ../sass/_product.scss */
+/* line 83, ../sass/_product.scss */
 .product-v1 .product-label {
   right: 0;
   top: 0;
@@ -11812,35 +11817,35 @@ table .price {
   left: 0;
   right: auto;
 }
-/* line 86, ../sass/_product.scss */
+/* line 90, ../sass/_product.scss */
 .product-v1 .products-row:first-child .product-block {
   border-top: none;
   padding-top: 0;
 }
-/* line 92, ../sass/_product.scss */
+/* line 96, ../sass/_product.scss */
 .product-v1 .product-col {
   margin-bottom: 0;
 }
-/* line 95, ../sass/_product.scss */
+/* line 99, ../sass/_product.scss */
 .product-v1 .product-block {
   border-top: 1px dotted #000000;
   padding: 30px 0;
 }
-/* line 98, ../sass/_product.scss */
+/* line 102, ../sass/_product.scss */
 .product-v1 .product-block .name {
   margin-top: 0;
 }
-/* line 101, ../sass/_product.scss */
+/* line 105, ../sass/_product.scss */
 .product-v1 .product-block .action {
   display: none;
 }
-/* line 104, ../sass/_product.scss */
+/* line 108, ../sass/_product.scss */
 .product-v1 .product-block:hover {
   background: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-/* line 108, ../sass/_product.scss */
+/* line 112, ../sass/_product.scss */
 .product-v1 .product-block .image {
   float: left;
   margin-right: 20px;
@@ -11854,7 +11859,7 @@ table .price {
   margin-left: 20px;
   margin-right: inherit;
 }
-/* line 112, ../sass/_product.scss */
+/* line 116, ../sass/_product.scss */
 .product-v1 .product-block .product-meta {
   overflow: hidden;
   text-align: left;
@@ -11864,7 +11869,7 @@ table .price {
   text-align: right;
 }
 
-/* line 119, ../sass/_product.scss */
+/* line 123, ../sass/_product.scss */
 .img-product-list .image {
   float: left;
 }
@@ -11873,20 +11878,20 @@ table .price {
   float: right;
 }
 
-/* line 125, ../sass/_product.scss */
+/* line 129, ../sass/_product.scss */
 .widget-product-list .product-block .name {
   margin: 0;
 }
-/* line 127, ../sass/_product.scss */
+/* line 131, ../sass/_product.scss */
 .widget-product-list .product-block .name a {
   color: #999999;
 }
-/* line 131, ../sass/_product.scss */
+/* line 135, ../sass/_product.scss */
 .widget-product-list .product-block .image {
   margin-right: 15px;
 }
 
-/* line 138, ../sass/_product.scss */
+/* line 142, ../sass/_product.scss */
 .product-list-title .panel-heading .panel-title {
   font-size: 20px;
   font-weight: 400;
@@ -11899,11 +11904,11 @@ table .price {
   padding: 0 0 4px;
 }
 
-/* line 151, ../sass/_product.scss */
+/* line 155, ../sass/_product.scss */
 .product-block {
   text-align: left;
 }
-/* line 153, ../sass/_product.scss */
+/* line 157, ../sass/_product.scss */
 .product-block .name {
   font-family: "Rubik",sans-serif;
   font-size: 13px;
@@ -11912,20 +11917,20 @@ table .price {
   min-height: 39px;
   text-transform: capitalize;
 }
-/* line 160, ../sass/_product.scss */
+/* line 164, ../sass/_product.scss */
 .product-block .name a {
   font-size: 13px;
   color: #222222;
 }
-/* line 165, ../sass/_product.scss */
+/* line 169, ../sass/_product.scss */
 .product-block .rating {
   margin-bottom: 10px;
 }
-/* line 168, ../sass/_product.scss */
+/* line 172, ../sass/_product.scss */
 .product-block .bottom {
   display: inline-block;
 }
-/* line 171, ../sass/_product.scss */
+/* line 175, ../sass/_product.scss */
 .product-block .bottom .cart, .product-block .bottom .price {
   display: inline-block;
   float: left;
@@ -11934,7 +11939,7 @@ table .price {
 .rtl .product-block .bottom .cart, .rtl .product-block .bottom .price {
   float: right;
 }
-/* line 176, ../sass/_product.scss */
+/* line 180, ../sass/_product.scss */
 .product-block .bottom .cart .btn {
   border: none;
   color: #6fa66f;
@@ -11950,13 +11955,13 @@ table .price {
   -webkit-transition: all 0.35s ease 0s;
   transition: all 0.35s ease 0s;
 }
-/* line 186, ../sass/_product.scss */
+/* line 190, ../sass/_product.scss */
 .product-block .bottom .cart .btn:hover {
   background-color: #6fa66f;
   color: #FFF;
   box-shadow: 0 0 0 30px #6fa66f inset;
 }
-/* line 197, ../sass/_product.scss */
+/* line 201, ../sass/_product.scss */
 .product-block .image {
   position: relative;
   text-align: center;
@@ -11964,21 +11969,21 @@ table .price {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 204, ../sass/_product.scss */
+/* line 208, ../sass/_product.scss */
 .product-block .description {
   display: none;
 }
-/* line 207, ../sass/_product.scss */
+/* line 211, ../sass/_product.scss */
 .product-block .product-col {
   margin-bottom: 20px;
 }
 
-/* line 214, ../sass/_product.scss */
+/* line 218, ../sass/_product.scss */
 .product-list-v2 .product-block .rating {
   display: none;
 }
 
-/* line 222, ../sass/_product.scss */
+/* line 226, ../sass/_product.scss */
 .product-list .product-block .price {
   font-size: 20px;
 }
