@@ -24,7 +24,8 @@ td {
 }
 .dropdown-menu {
 	padding: 20px;
-    min-width: 170px;
+  min-width: 170px;
+  background-color: $megamenu-dropdown-bg;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -63,6 +64,13 @@ button {
     &:hover {
         color: $link-hover-color;
     }
+}
+.btn-sm{
+  background-color: $button-filter;
+  color: #999999;
+  line-height: 1.5;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 //
@@ -196,45 +204,38 @@ button {
     margin: 0;
     padding: 0;
     > li {
-        padding: 0;
-        &:hover{
-          background-color: $brand-success;
-          a{
-            color: $white;
-          }
+        font-size: 11px;
+        padding: 5px 0;
+        text-transform: uppercase;      
+        a{
+          &:hover{
+          color: $black;
+          text-decoration: underline;
         }
-        &:first-child{
-          > a{
-            border-top: none;
-          }
+      }       
+      &:first-child{
+        > a{
+          border-top: none;
         }
-        > a {
-            padding: 8px 20px;
-            font-size: 16px;
-            display: block;
-            position: relative;
-            border-top: 1px dotted $border-color;            
-        }
-        .accordion-heading {
-            position: absolute;
-            top: 15px;
-            font-size: 10px;
-            color: $theme-color-default;
-            @include rtl-right(20px);
-
-
-             color: #696969;
-    cursor: pointer;
-    display: block;
-    font-size: 7px;
-    height: 20px;
-    line-height: 18px;
-    position: absolute;
-    right: 20px;
-    text-align: center;
-    top: 15px;
-    width: 20px;
-        }
+      }
+      > a {
+        color: #999999;        
+      }
+      .accordion-heading {
+        position: absolute;
+        //color: $theme-color-default;
+        @include rtl-right(20px);
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+        height: 20px;
+        line-height: 18px;
+        position: absolute;
+        right: 20px;
+        text-align: center;
+        top: 6px;
+        width: 20px;
+      }
     }
     ul {
         padding: 0 0 20px;
@@ -244,9 +245,9 @@ button {
             a {
               line-height: 30px;
               @include rtl-padding-left(40px);
-              font-size: 13px;
+              color: #999999;
                 &:hover {
-                    color: $theme-color;
+                    color: $black;
                 }
             }
         }
@@ -281,58 +282,6 @@ button {
       @include rtl-padding-right(20px);
       &:hover,&:active,&:focus{
        // border-left-color: $border-color;
-      }
-    }
-  }
-}
-.breadcrumb{
-  margin-bottom: 30px;
-  padding: 14px 0;
-  position: relative;
-  &:before{
-    background: url("#{$image-theme-path}pattern-breadcrumb.png") repeat 0 0;
-    content: "";
-    height: 100%;
-    margin-left: -150%;
-    padding: 0 200%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    border-top: 1px solid #f5f5f5;
-  }
-  a {
-    &:hover {
-        color: $theme-color;
-    }
-  }
-  > li{
-    padding: 0 15px;
-    position: relative;
-    &:first-child{
-      @include rtl-padding-left(0);
-    }
-    &:after {
-        position: absolute;
-        content: "\f0da";
-        top: 6px;
-        right:-3px;
-        display: inline-block;
-        font: normal normal normal 13px/1 FontAwesome;
-        font-size: 13px;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        color:#dadada;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    & + li:before {
-      content: none;
-    }
-    &:last-child{
-        a {
-            color: $black;
-        }
-      &:after {
-        content: none;
       }
     }
   }

@@ -46,14 +46,9 @@
             <?php } ?>
         </div>
         <?php } ?>
-        <?php if( isset($product['description']) ){ ?>
-            <p class="description"><?php echo utf8_substr( strip_tags($product['description']),0,200);?>...</p>
-        <?php } ?>
         
         <div class="bottom clearfix">
-           <!--  <div class="cart"><button class="btn btn-sm" title="<?php echo $button_cart; ?>" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-basket"></i></button>
-            </div> -->
-            <!-- <div class="rating">
+            <div class="rating">
                 <?php for ($is = 1; $is <= 5; $is++) { ?>
                     <?php if ($product['rating'] < $is) { ?>
                         <span class="fa fa-stack"><i class="fa fa-star-o"></i></span>
@@ -62,7 +57,7 @@
                         </span>
                     <?php } ?>
                 <?php } ?>
-            </div> -->
+            </div>
             <?php if ($product['price']) { ?>
                 <div class="price">
                   <?php if (!$product['special']) { ?>
@@ -73,6 +68,10 @@
                 </div>
             <?php } ?>
         </div>
+        <?php if( isset($product['description']) ){ ?>
+            <p class="description"><?php echo utf8_substr( strip_tags($product['description']),0,200);?>...</p>
+        <?php } ?>
+        
     </div>
 
 </div>

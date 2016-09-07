@@ -1,9 +1,11 @@
 <div class="panel refine-search">
-  <div class="panel-heading"><h3 class="panel-title"><?php echo $heading_title; ?></h3></div>
+  
   <div class="panel-body">
     <?php foreach ($filter_groups as $filter_group) { ?>
     <div class="list-group">
-        <a class="list-group-item"><?php echo $filter_group['name']; ?></a>
+        <div class="panel-heading">
+          <h3 class="panel-title"><?php echo $filter_group['name']; ?></h3>
+        </div>
         <div class="list-group-item">
           <div id="filter-group<?php echo $filter_group['filter_group_id']; ?>">
             <?php foreach ($filter_group['filter'] as $filter) { ?>

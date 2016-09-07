@@ -177,6 +177,10 @@
 }
 /*$media (max-width: 767px) {*/
 @media (max-width: $screen-xs-max) {
+    .feature-box1{
+        border-left: none;
+        border-right: none;
+    }
     .latest-posts-body .posts-meta{
         margin-left: 0;
     }

@@ -44,44 +44,6 @@ td, th {
 .border-top{
     border-top: 1px solid $border-color;
 }
-.border-style{
-    
-}
-/* .border {
-    &:after {
-        content: "";
-        width: 1000%;
-        height: 1px;
-        position: absolute;
-        top: 1px;
-        @include rtl-left(0px);
-        background-color: $border-color;
-        z-index: 9;
-    }
-    &:before {
-        content: "";
-        width: 1px;
-        height: 1000%;
-        position: absolute;
-        @include rtl-left(0px);
-        top: 1px;
-        background-color: $border-color;
-        z-index: 9;
-    }
-    & + .border{
-        &:before {
-            content: "";
-            width: 1px;
-            height: 1000%;
-            position: absolute;
-            @include rtl-left(0px);
-            top: 1px;
-            background-color: $border-color;
-            z-index: 9;
-        }
-    }
-} */
-
 .border-base {
     border: 1px solid $border-color;
 }
@@ -184,11 +146,11 @@ td, th {
 // --------------------------------------------------
 
 .carousel-controls {
-    @include rtl-left(0);
+    @include rtl-left(-10%);
     position: absolute;
     margin-top: -40px;
     z-index: 999;
-    bottom: 165px;
+    bottom: 193px;
     .carousel-control {
         height: $carousel-control-width;
         display: inline-block;
@@ -196,11 +158,10 @@ td, th {
         line-height: 40px;
         background-color: #d3d3d3;
         &.left {
-            left: -80px;
+            left: 0;
         }
         &.right {
-            right: 0;
-            left: auto;
+            right: -80px;            
         }
     }
 }
@@ -220,7 +181,6 @@ td, th {
   left: 0;
   bottom: 0;
   width: 100%;
-/*  z-index: -1;*/
   content: " ";
   height: 100%;
   text-align: center;
@@ -237,12 +197,11 @@ td, th {
         line-height: 40px;
         top: auto;
         &.left {
-         left: 210px;
+            @include rtl-left(210px);
         }
       &.right {
-        right: auto;
-        left: 250px;
-      }
+            @include rtl-left(250px);
+        }
     }
     .profile{
         text-align: center;
@@ -290,8 +249,12 @@ td, th {
 
 //latest-posts-body
 .latest-posts-body{
+    .latest-posts-meta{
+        @include rtl-text-align-left ();
+    }
     .posts-meta{
-        margin-left: -60px;
+        //margin-left: -60px;
+        @include rtl-margin-left (-60px);
         margin-top: 20px;       
         .entry-title{
             font-size: 14px;

@@ -4,12 +4,14 @@
     color: $product-price-color;
     //font-weight: $product-price-new-font-weight;
     .price-new {
+        color: $product-price-color;
     }
     .price-old {
         color: $product-price-old-color;
         font-weight: normal;
         @include rtl-padding-left(5px);
         text-decoration: line-through;
+        font-size: 12px;
     }
 }
 table {
@@ -113,6 +115,11 @@ table {
         }
     }    
 }
+.img-product-list{
+    .image{
+      @include rtl-float-left ();
+    }
+}
 .widget-product-list  {
     .product-block{
         .name{
@@ -202,4 +209,18 @@ table {
     }
 }
 
+.product-list-v2{
+    .product-block{
+        .rating{
+            display: none;
+        }
+    }
+}
 
+.product-list{
+    .product-block{
+        .price{
+            font-size: $product-price-new-font-size;
+        }
+    }
+}

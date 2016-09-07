@@ -1,5 +1,5 @@
 
-<div class="panel <?php echo $prefix; ?> feature-box" id="newsletter_<?php echo $position.$module;?>">
+<div class="panel <?php echo $prefix; ?> feature-box feature-box1" id="newsletter_<?php echo $position.$module;?>">
 <?php $id = "new" . uniqid(); ?>
 	<form id="<?php echo $id; ?>" action="#" method="post" class="form-newsletter">
             <div class="panel-heading">

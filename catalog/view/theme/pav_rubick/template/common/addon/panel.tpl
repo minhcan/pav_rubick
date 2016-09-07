@@ -87,7 +87,7 @@ $(document).ready( function (){
 								<?php if( !empty( $output) ){?>
 								<div class="accordion"  id="custom-accordion<?php echo $for; ?>">
 								<?php $i=0; foreach ( $output as $group ) { ?>
-								  	            	   <div class="accordion-group">
+								  	<div class="accordion-group">
 			                            <div class="accordion-heading">
 											<a class="accordion-toggle" data-toggle="collapse" data-parent="#custom-accordion<?php echo $for; ?>" href="#collapse<?php echo $group['match'];?>">
 												<?php echo $group['header']; ?>

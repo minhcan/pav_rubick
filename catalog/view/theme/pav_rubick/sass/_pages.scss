@@ -6,7 +6,10 @@
         padding:0;
     }
     h3{
-        margin: 0;
+       
+    }
+    .panel-heading{
+      
     }
     ul{
         li{
@@ -24,7 +27,6 @@
         padding: 0;
     }
     .list-group {
-        border-bottom: 1px dotted $border-color;
         a.list-group-item {
             font-size: 12px;
             font-weight: bold;
@@ -63,9 +65,9 @@
         font-size: 14px;
         line-height:0;
         color: #dadada;
-        @include rtl-padding(5px,20px,5px,0);
+        //@include rtl-padding(5px,20px,5px,0);
         &#grid-view {
-            @include rtl-border-right(1px dotted $border-color);
+            //@include rtl-border-right(1px dotted $border-color);
         }
         &:hover, &.active {
             color: $black;
@@ -80,19 +82,20 @@
 }
 /*paging*/
 .paging {
-    border-top: 1px dotted $border-color;
+    //border-top: 1px dotted $border-color;
     padding:20px 0;
     margin-bottom: 30px;
 }
 /* filter by brands */
 .filter{
-    border-top: 1px dotted $border-color;
-    border-bottom: 1px dotted $border-color;
-    padding: 10px 15px;
-    margin-bottom: 20px;
+    //border-top: 1px dotted $border-color;
+    border-bottom: 2px solid $border-color;
+    padding: 0 0 15px;
+    margin-bottom: 30px;
     .control-label {
         margin: 6px 10px;
-        color:$gray-dark;
+        color:$black;
+        text-transform: uppercase;
     }
     #compare-total{
         padding-top: 5px;
@@ -267,7 +270,6 @@
         }
         .product-block {
             overflow: hidden;
-            border-bottom: 1px dotted $border-color;
             padding: 20px 0;
             .image {
                 width: 30%;
@@ -284,6 +286,13 @@
                 @include rtl-float-left();
                 @include rtl-padding-left(30px);
                 width: 70%;
+                .name{
+                    margin: 0;
+                    a{
+                        font-size: 21px;
+                        font-weight: 400;
+                    }
+                }
             }
         }
     }

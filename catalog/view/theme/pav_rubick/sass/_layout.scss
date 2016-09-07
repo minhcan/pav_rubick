@@ -149,6 +149,15 @@ header, .container{
         .dropdown-menu{
             right: 0;
             left: auto;
+            .links {
+                li{
+                    a{
+                        &:hover{
+                            color: $topbar-link-hover-color;
+                        }
+                    }
+                }
+            }
         }
     }
     
@@ -382,6 +391,68 @@ header {
 
 }
 
+.breadcrumb{
+    background: url("#{$image-theme-path}pattern-breadcrumb.png") repeat 0 0;
+    min-height: 200px;
+    font-size: 11px;
+    margin: 0 0 55px;
+    padding: 0 80px;
+    position: relative;
+    text-transform: uppercase;
+    ul{  padding-left: 0 !important;            
+        li{
+            display: inline-block;
+            padding: 0 15px;
+            position: relative;
+            &:first-child{
+              @include rtl-padding-left(0);
+            }
+            &:after {
+                position: absolute;
+                content: "\f0da";
+                top: 3px;
+                right:-3px;
+                display: inline-block;
+                font: normal normal normal 13px/1 FontAwesome;
+                font-size: 13px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                color:#dadada;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            & + li:before {
+              content: none;
+            }
+            &:last-child{
+                a {
+                    color: $black;
+                }
+              &:after {
+                content: none;
+              }
+            }
+        }
+    }
+    h1{
+        font-size: 40px;
+        line-height: 1;
+        margin: 0 0 15px;
+        font-weight: 400;
+    }
+    a{
+        text-transform: uppercase;
+        font-size: 11px;
+        &:hover {
+             color: $black;
+         }
+    }    
+    .breadscrumb-content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 /* content */
 
 #content {
@@ -453,7 +524,28 @@ header {
 
 #column-left, #column-right {
     .panel{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        border: 1px solid #f1f1f1;
+        padding: 30px;
+        position: relative;
+        .panel-heading{
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            padding: 0;
+            .panel-title{
+              background: #ffffff none repeat scroll 0 0;
+              border: 1px solid #f1f1f1;
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+              padding: 5px 15px;
+              text-transform: uppercase;
+            }
+        }
     }
     .products-block {
         padding: 0;

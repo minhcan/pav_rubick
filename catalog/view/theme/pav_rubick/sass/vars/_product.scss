@@ -10,7 +10,7 @@ $button-addtocart-padding:          13px 20px!default;
 $button-addtocart-font-family:      $font-family-second!default;
 $button-addtocart-bg-hover:               $theme-color !default;
 $button-addtocart-color-hover:            $white !default;
-
+$button-filter:   					#f1f1f1 !default;
 // action
 $button-action-bg:                  #3d3d3d !default;
 $button-action-color:               #bbbbbb !default;
@@ -64,13 +64,13 @@ $product-price-font-family:			$font-family-base !default;
 $product-price-font-size:			16px !default;
 
 
-$product-price-new-color:           $link-color  !default;
+$product-price-new-color:           $product-price-color !default;
 $product-price-new-font-family:      $font-family-base !default;
 $product-price-new-font-size:       20px !default;
 $product-price-new-font-weight:     bold !default;
 
 
-$product-price-old-color:			$theme-color-second !default;
+$product-price-old-color:			#696969 !default;
 $product-price-old-font-size:       16px  !default;
 $product-price-old-font-weight:     500 !default;
 

@@ -1,10 +1,15 @@
 <?php echo $header; ?>
 <div class="container">
-	<ul class="breadcrumb">
-		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
-		<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-		<?php } ?>
-	</ul>
+	<div  class="breadcrumb">
+	    <div class="breadscrumb-content">
+		    <h1 class="heading_title"><?php echo $heading_title; ?></h1>
+			<ul>
+				<?php foreach ($breadcrumbs as $breadcrumb) { ?>
+				<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+				<?php } ?>
+			</ul>
+		</div>
+	</div>
 	<div class="row"><?php echo $column_left; ?>
 		<?php if ($column_left && $column_right) { ?>
 		<?php $class = 'col-sm-6'; ?>
